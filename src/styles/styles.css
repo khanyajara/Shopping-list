@@ -52,11 +52,16 @@ button:hover {
 ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Enables wrapping of list items */
 }
 
 li {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 5px; /* Adds spacing between items */
+    flex: 1 1 calc(45% - 10px); /* Adjusts width and allows wrapping */
     display: flex;
     justify-content: space-between;
     align-items: center;
