@@ -6,6 +6,7 @@ import ShoppingList from './components/Shoppinglist';
  // Ensure correct casing
 import AddItem from './components/AddItem'; // Adjusted if needed
 import LoginSignUp from './components/LoginSignUp';
+import PrivacyPolicy from './components/policy';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/" element={<LoginSignUp />} />
           <Route path="/shopping-list" element={<ShoppingList />} />
           <Route path="/add-item" element={<AddItem />} />
+          <Route path="/policy" element={<PrivacyPolicy/>}/>
         </Routes>
       </div>
     </Router>

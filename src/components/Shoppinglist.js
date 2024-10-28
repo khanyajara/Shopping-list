@@ -3,6 +3,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setItems, updateItem, removeItem, boughtItems } from '../redux/action';
 import axios from 'axios';
 import '../styles/styles.css'; // Importing CSS file
+import { useNavigate } from 'react-router-dom';
+
+
+
+
 
 const ShoppingApp = () => {
     const dispatch = useDispatch();
@@ -13,7 +18,11 @@ const ShoppingApp = () => {
     const [category, setCategory] = useState('');
     const [tag, setTag] = useState('');
     const [categories] = useState(['Groceries', 'Household', 'Electronics']); // Example categories
+const navigate=useNavigate();
 
+const privacy =()=>{
+    navigate("/policy")
+}
     useEffect(() => {
         const fetchItems = async () => {
             try {
@@ -75,6 +84,8 @@ const ShoppingApp = () => {
 
     return (
         <div className="shopping-app">
+
+            <div onClick={privacy}> Read our Policy</div>
             <div className="shopping-list-container">
                 <h1>Shopping List</h1>
                 <input
