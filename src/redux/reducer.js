@@ -1,6 +1,6 @@
 // src/redux/reducer.js
 
-import { ADD_ITEM, REMOVE_ITEM, UPDATE_ITEM, SET_ITEMS } from './actions';
+import { ADD_ITEM, REMOVE_ITEM, UPDATE_ITEM, SET_ITEMS } from './action';
 
 const initialState = {
   items: [],
