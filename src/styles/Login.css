@@ -1,17 +1,19 @@
 /* src/components/LoginSignUp.css */
 
 .auth-container {
-    background-color: #ffffff;
+    background-color: #f8f9fa; /* Light gray background for a modern look */
     border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+    padding: 30px; /* Increased padding for a more spacious feel */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* Slightly darker shadow for depth */
+    margin: 30px auto; /* Center the container with margin auto */
+    max-width: 400px; /* Limit the width for better focus */
 }
 
 .auth-container h2 {
-    color: #333;
-    margin-bottom: 15px;
+    color: #007bff; /* Blue color for headings */
+    margin-bottom: 20px; /* Increased margin for better separation */
     text-align: center;
+    font-size: 24px; /* Larger font size for emphasis */
 }
 
 .auth-container form {
@@ -20,41 +22,124 @@
 }
 
 .auth-container input {
-    padding: 10px;
+    padding: 12px; /* Increased padding for better touch targets */
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #007bff; /* Blue border for a professional look */
     border-radius: 4px;
     font-size: 14px;
+    transition: border-color 0.3s; /* Smooth transition on focus */
+}
+
+.auth-container input:focus {
+    border-color: #0056b3; /* Darker blue on focus */
+    outline: none; /* Remove default outline */
 }
 
 .auth-container button {
-    padding: 10px;
-    background-color: #007bff;
+    padding: 12px; /* Increased padding */
+    background-color: #007bff; /* Consistent blue for buttons */
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
 .auth-container button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 .auth-container p {
     text-align: center;
     color: red; /* For error messages */
+    margin-top: 10px; /* Added margin for spacing */
 }
 
 .auth-container .toggle-button {
     background: none;
     border: none;
-    color: #007bff;
+    color: #007bff; /* Blue color for toggle button */
     cursor: pointer;
     font-size: 14px;
     text-align: center;
+    margin-top: 10px; /* Added margin for spacing */
 }
 
 .auth-container .toggle-button:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .auth-container {
+        width: 90%; /* Allow more space on smaller screens */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .auth-container h2 {
+        font-size: 20px; /* Slightly smaller heading on mobile */
+    }
+}
+body {
+    background-color: #f0f4f8; /* Light background color */
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50; /* Darker blue color for headings */
+}
+
+.form-container {
+    max-width: 400px; /* Set a max width for the form */
+    margin: 50px auto; /* Center the form */
+    padding: 20px;
+    background-color: white; /* White background for the form */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+input {
+    width: 100%; /* Full width for inputs */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #007bff; /* Blue border */
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #0056b3; /* Darker blue on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    width: 100%; /* Full width for button */
+    padding: 10px;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.error {
+    color: red; /* Error message color */
+    text-align: center;
+    margin-top: 10px;
+}
+
+.toggle-button {
+    margin-top: 15px;
+    background: none;
+    border: none;
+    color: #007bff; /* Blue color for toggle button */
+    cursor: pointer;
 }
