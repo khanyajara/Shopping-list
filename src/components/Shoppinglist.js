@@ -1,8 +1,6 @@
-// src/components/ShoppingApp.js
-
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setItems, updateItem, removeItem } from '../redux/action';
+import { setItems, updateItem, removeItem, boughtItems } from '../redux/action';
 import axios from 'axios';
 import '../styles/styles.css'; // Importing CSS file
 
@@ -14,7 +12,7 @@ const ShoppingApp = () => {
     const [editedItem, setEditedItem] = useState(null);
     const [category, setCategory] = useState('');
     const [tag, setTag] = useState('');
-    const [categories, setCategories] = useState(['Groceries', 'Household', 'Electronics']); // Example categories
+    const [categories] = useState(['Groceries', 'Household', 'Electronics']); // Example categories
 
     useEffect(() => {
         const fetchItems = async () => {
@@ -46,6 +44,10 @@ const ShoppingApp = () => {
         resetItemForm();
     };
 
+    const toggleBought = (id) => {
+        dispatch(boughtItems(id));
+    };
+
     const resetItemForm = () => {
         setCategory('');
         setTag('');
@@ -73,7 +75,6 @@ const ShoppingApp = () => {
 
     return (
         <div className="shopping-app">
-            <h1>Shopping List App</h1>
             <div className="shopping-list-container">
                 <h1>Shopping List</h1>
                 <input
@@ -95,8 +96,9 @@ const ShoppingApp = () => {
                 <button onClick={shareList}>Share List</button>
                 <ul>
                     {sortedItems.map(item => (
-                        <li key={item.id}>
+                        <li key={item.id} style={{ textDecoration: item.bought ? 'line-through' : 'none' }}>
                             {item.name} - {item.quantity} - {item.category} - {item.tag}
+                            <button onClick={() => toggleBought(item.id)}>{item.bought ? 'Unmark' : 'Bought'}</button>
                             <button onClick={() => handleEdit(item)}>Edit</button>
                             <button onClick={() => handleDelete(item.id)}>Delete</button>
                         </li>
