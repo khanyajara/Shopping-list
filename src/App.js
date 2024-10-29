@@ -11,7 +11,7 @@ const App = () => {
   return (
     <Router>
       <div>
-        <h1>Shopping List App</h1>
+        <h1></h1>
         <Routes>
           <Route path="/" element={<LoginSignUp />} />
           <Route path="/shopping-list" element={<ShoppingList />} />
