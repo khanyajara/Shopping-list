@@ -1,4 +1,4 @@
-// src/components/AddItem.js
+
 
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
@@ -9,7 +9,7 @@ import ShoppingList from './Shoppinglist';
 const AddItem = () => {
   const [name, setName] = useState('');
   const [quantity, setQuantity] = useState('');
-  const [category, setCategory] = useState(''); // State for category
+  const [category, setCategory] = useState(''); 
 
   const dispatch = useDispatch();
 
@@ -20,7 +20,7 @@ const AddItem = () => {
     dispatch(addItem(newItem));
     setName('');
     setQuantity('');
-    setCategory(''); // Reset category input
+    setCategory(''); 
   };
 
   return (

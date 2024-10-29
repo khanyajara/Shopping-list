@@ -6,8 +6,8 @@ const LoginSignUp = () => {
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [confirmPassword, setConfirmPassword] = useState(''); // New state for confirm password
-    const [username, setUsername] = useState(''); // New state for username
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const [username, setUsername] = useState(''); 
     const [isSignUp, setIsSignUp] = useState(true);
     const [error, setError] = useState('');
 
@@ -15,7 +15,7 @@ const LoginSignUp = () => {
         e.preventDefault();
         setError('');
 
-        // Simple validation
+        
         if (!email || !password || (isSignUp && !username) || (isSignUp && !confirmPassword)) {
             setError('All fields are required.');
             return;
@@ -29,22 +29,22 @@ const LoginSignUp = () => {
         const storedUser = JSON.parse(localStorage.getItem('user'));
 
         if (isSignUp) {
-            // Sign Up Logic
+          
             if (storedUser && storedUser.email === email) {
                 setError('User already exists. Please log in.');
             } else {
-                const newUser = { email, password, username }; // Include username in user data
+                const newUser = { email, password, username }; 
                 localStorage.setItem('user', JSON.stringify(newUser));
                 alert('Sign-up successful!');
                 resetForm();
-                navigate('/add-item'); // Navigate to /add-item on successful sign-up
+                navigate('/add-item');
             }
         } else {
-            // Login Logic
+            
             if (storedUser && storedUser.email === email && storedUser.password === password) {
                 alert('Login successful!');
                 resetForm();
-                navigate('/add-item'); // Navigate to /add-item on successful login
+                navigate('/add-item'); 
             } else {
                 setError('Invalid email or password.');
             }
@@ -54,8 +54,8 @@ const LoginSignUp = () => {
     const resetForm = () => {
         setEmail('');
         setPassword('');
-        setConfirmPassword(''); // Reset confirm password
-        setUsername(''); // Reset username
+        setConfirmPassword(''); 
+        setUsername(''); 
     };
 
     return (

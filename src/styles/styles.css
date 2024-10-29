@@ -1,4 +1,4 @@
-/* src/components/ShoppingApp.css */
+
 
 body {
     font-family: Arial, sans-serif;
@@ -51,17 +51,18 @@ button:hover {
 
 ul {
     list-style: none;
+    width: 100%;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Enables wrapping of list items */
+    flex-wrap: wrap; 
 }
 
 li {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    margin: 5px; /* Adds spacing between items */
-    flex: 1 1 calc(45% - 10px); /* Adjusts width and allows wrapping */
+    margin: 5px; 
+    flex: 1 1 calc(45% - 10px); 
     display: flex;
     justify-content: space-between;
     align-items: center;

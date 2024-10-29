@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setItems, updateItem, removeItem, boughtItems } from '../redux/action';
 import axios from 'axios';
-import '../styles/styles.css'; // Importing CSS file
+import '../styles/styles.css'; 
 import { useNavigate } from 'react-router-dom';
 
 
@@ -17,7 +17,7 @@ const ShoppingApp = () => {
     const [editedItem, setEditedItem] = useState(null);
     const [category, setCategory] = useState('');
     const [tag, setTag] = useState('');
-    const [categories] = useState(['Groceries', 'Household', 'Electronics']); // Example categories
+    const [categories] = useState(['Groceries', 'Household', 'Electronics']); 
 const navigate=useNavigate();
 
 const privacy =()=>{

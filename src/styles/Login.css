@@ -1,19 +1,19 @@
-/* src/components/LoginSignUp.css */
+
 
 .auth-container {
-    background-color: #f8f9fa; /* Light gray background for a modern look */
+    background-color: #f8f9fa; 
     border-radius: 8px;
-    padding: 30px; /* Increased padding for a more spacious feel */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* Slightly darker shadow for depth */
-    margin: 30px auto; /* Center the container with margin auto */
-    max-width: 400px; /* Limit the width for better focus */
+    padding: 30px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
+    margin: 30px auto; 
+    max-width: 400px; 
 }
 
 .auth-container h2 {
-    color: #007bff; /* Blue color for headings */
-    margin-bottom: 20px; /* Increased margin for better separation */
+    color: #007bff; 
+    margin-bottom: 20px;
     text-align: center;
-    font-size: 24px; /* Larger font size for emphasis */
+    font-size: 24px;
 }
 
 .auth-container form {
@@ -22,102 +22,102 @@
 }
 
 .auth-container input {
-    padding: 12px; /* Increased padding for better touch targets */
+    padding: 12px; 
     margin: 10px 0;
-    border: 1px solid #007bff; /* Blue border for a professional look */
+    border: 1px solid #007bff; 
     border-radius: 4px;
     font-size: 14px;
-    transition: border-color 0.3s; /* Smooth transition on focus */
+    transition: border-color 0.3s; 
 }
 
 .auth-container input:focus {
-    border-color: #0056b3; /* Darker blue on focus */
-    outline: none; /* Remove default outline */
+    border-color: #0056b3; 
+    outline: none; 
 }
 
 .auth-container button {
-    padding: 12px; /* Increased padding */
-    background-color: #007bff; /* Consistent blue for buttons */
+    padding: 12px; 
+    background-color: #007bff; 
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    transition: background-color 0.3s;
 }
 
 .auth-container button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3; 
 }
 
 .auth-container p {
     text-align: center;
-    color: red; /* For error messages */
-    margin-top: 10px; /* Added margin for spacing */
+    color: red; 
+    margin-top: 10px; 
 }
 
 .auth-container .toggle-button {
     background: none;
     border: none;
-    color: #007bff; /* Blue color for toggle button */
+    color: #007bff; 
     cursor: pointer;
     font-size: 14px;
     text-align: center;
-    margin-top: 10px; /* Added margin for spacing */
+    margin-top: 10px; 
 }
 
 .auth-container .toggle-button:hover {
-    text-decoration: underline; /* Underline effect on hover */
+    text-decoration: underline; 
 }
 
-/* Responsive Design */
+
 @media (max-width: 600px) {
     .auth-container {
-        width: 90%; /* Allow more space on smaller screens */
-        padding: 20px; /* Adjust padding */
+        width: 90%; 
+        padding: 20px; 
     }
 
     .auth-container h2 {
-        font-size: 20px; /* Slightly smaller heading on mobile */
+        font-size: 20px; 
     }
 }
 body {
-    background-color: #f0f4f8; /* Light background color */
+    background-color: #f0f4f8; 
     font-family: Arial, sans-serif;
 }
 
 h2 {
     text-align: center;
-    color: #2c3e50; /* Darker blue color for headings */
+    color: #2c3e50; 
 }
 
 .form-container {
-    max-width: 400px; /* Set a max width for the form */
-    margin: 50px auto; /* Center the form */
+    max-width: 400px; 
+    margin: 50px auto;
     padding: 20px;
-    background-color: white; /* White background for the form */
+    background-color: white; 
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
 input {
-    width: 100%; /* Full width for inputs */
+    width: 100%; 
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #007bff; /* Blue border */
+    border: 1px solid #007bff; 
     border-radius: 4px;
     font-size: 14px;
 }
 
 input:focus {
-    border-color: #0056b3; /* Darker blue on focus */
-    outline: none; /* Remove default outline */
+    border-color: #0056b3; 
+    outline: none; 
 }
 
 button {
-    width: 100%; /* Full width for button */
+    width: 100%; 
     padding: 10px;
-    background-color: #007bff; /* Blue button */
+    background-color: #007bff; 
     color: white;
     border: none;
     border-radius: 4px;
@@ -127,11 +127,11 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
 }
 
 .error {
-    color: red; /* Error message color */
+    color: red; 
     text-align: center;
     margin-top: 10px;
 }
@@ -140,6 +140,6 @@ button:hover {
     margin-top: 15px;
     background: none;
     border: none;
-    color: #007bff; /* Blue color for toggle button */
+    color: #007bff; 
     cursor: pointer;
 }

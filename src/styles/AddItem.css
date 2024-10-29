@@ -1,71 +1,16 @@
-/* src/components/AddItem.css */
-
 .add-item-container {
-    background-color: #f8f9fa; /* Light gray background for a clean look */
+    background-color: #f8f9fa;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .add-item-container h2 {
-    color: #007bff; /* Blue color for headings */
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.add-item-container form {
-    display: flex;
-    flex-direction: column;
-}
-
-.add-item-container input {
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #007bff; /* Blue border for inputs */
-    border-radius: 4px;
-    font-size: 14px;
-    transition: border-color 0.3s;
-}
-
-.add-item-container input:focus {
-    border-color: #0056b3; /* Darker blue on focus */
-    outline: none; /* Remove default outline */
-}
-
-.add-item-container button {
-    padding: 10px;
-    background-color: #007bff; /* Blue for adding items */
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-
-.add-item-container button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-}
-
-.add-item-container .error-message {
-    color: red; /* For any error messages */
-    text-align: center;
-    margin-top: 10px;
-}
-.add-item-container {
-    background-color: #f8f9fa; /* Light gray background for a clean look */
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-    max-width: 400px; /* Limit the width for better focus */
-    margin-left: auto; /* Center the container */
-    margin-right: auto; /* Center the container */
-}
-
-.add-item-container h2 {
-    color: #007bff; /* Blue color for headings */
+    color: #007bff;
     margin-bottom: 15px;
     text-align: center;
 }
@@ -77,9 +22,9 @@
 
 .add-item-container input, 
 .add-item-container select {
-    padding: 12px; /* Increased padding for better touch targets */
+    padding: 12px;
     margin: 10px 0;
-    border: 1px solid #007bff; /* Blue border for inputs */
+    border: 1px solid #007bff;
     border-radius: 4px;
     font-size: 14px;
     transition: border-color 0.3s;
@@ -87,13 +32,13 @@
 
 .add-item-container input:focus, 
 .add-item-container select:focus {
-    border-color: #0056b3; /* Darker blue on focus */
-    outline: none; /* Remove default outline */
+    border-color: #0056b3;
+    outline: none;
 }
 
 .add-item-container button {
-    padding: 12px; /* Increased padding */
-    background-color: #007bff; /* Blue for adding items */
+    padding: 12px;
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 4px;
@@ -103,23 +48,22 @@
 }
 
 .add-item-container button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
 }
 
 .add-item-container .error-message {
-    color: red; /* For any error messages */
+    color: red;
     text-align: center;
     margin-top: 10px;
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
     .add-item-container {
-        width: 90%; /* Allow more space on smaller screens */
-        padding: 15px; /* Adjust padding */
+        width: 90%;
+        padding: 15px;
     }
 
     .add-item-container h2 {
-        font-size: 18px; /* Slightly smaller heading on mobile */
+        font-size: 18px;
     }
 }

@@ -1,10 +1,9 @@
-// src/App.js
+
 
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ShoppingList from './components/Shoppinglist';
- // Ensure correct casing
-import AddItem from './components/AddItem'; // Adjusted if needed
+import AddItem from './components/AddItem'; 
 import LoginSignUp from './components/LoginSignUp';
 import PrivacyPolicy from './components/policy';
 
