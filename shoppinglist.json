@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1732784461109,
+    "name": "milk ",
+    "quantity": "6",
+    "category": "Groceries",
+    "productType": "Dairy"
+  },
+  {
+    "id": 1732802352053,
+    "name": "milk",
+    "quantity": "5",
+    "category": "Groceries",
+    "productType": "Dairy"
+  },
+  {
+    "id": 1732804197808,
+    "name": "beef",
+    "quantity": "7",
+    "category": "Groceries",
+    "productType": "Meat"
+  },
+  {
+    "id": 1732887208589,
+    "name": "Bleach",
+    "quantity": "3",
+    "category": "Household",
+    "productType": "Cleaning Supplies"
+  },
+  {
+    "id": 1732892996453,
+    "name": "milk",
+    "quantity": "3",
+    "category": "Groceries",
+    "productType": "Dairy"
+  },
+  {
+    "id": 1733216204070,
+    "name": "Eggs ",
+    "quantity": "12",
+    "category": "Groceries",
+    "productType": "Meat"
+  },
+  {
+    "id": 1733216246976,
+    "name": "lenovo",
+    "quantity": "1",
+    "category": "Electronics",
+    "productType": "Laptops"
+  },
+  {
+    "id": 1733312274497,
+    "name": "xx",
+    "quantity": "2",
+    "category": "Groceries",
+    "productType": "Fruits"
+  },
+  {
+    "id": 1733312291309,
+    "name": "xx",
+    "quantity": "1",
+    "category": "Household",
+    "productType": "Furniture"
+  },
+  {
+    "id": 1733312311771,
+    "name": "x",
+    "quantity": "1",
+    "category": "Electronics",
+    "productType": "Laptops"
+  },
+  {
+    "id": 1733319174850,
+    "name": "bleach",
+    "quantity": "1",
+    "category": "Household",
+    "productType": "Cleaning Supplies"
+  }
+]

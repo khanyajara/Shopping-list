@@ -1,77 +1,202 @@
-
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
 }
 
+/* Container Styles */
 .shopping-app {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-    color: #333;
+.shopping-list-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #444;
 }
 
-.auth-container, .add-item-container, .shopping-list-container {
-    margin-bottom: 20px;
+
+.search-sort-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.sort-dropdown,
+.category-dropdown,
+.product-type-dropdown {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.share-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.share-button:hover {
+  background-color: #0056b3;
+}
+
+
+.category-section {
+  margin-bottom: 20px;
+}
+
+.category-section h2 {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.category-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.category-section li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+}
+
+.category-section li:hover {
+  background-color: #e6f7ff;
+}
+
+
+.buy-button,
+.edit-button,
+.delete-button {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.buy-button:hover {
+  color: #28a745;
+}
+
+.edit-button:hover {
+  color: #ffc107;
+}
+
+.delete-button:hover {
+  color: #dc3545;
+}
+
 
 form {
-    display: flex;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+form input,
+form select,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button[type="submit"] {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+form button[type="button"] {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button[type="button"]:hover {
+  background-color: #c82333;
+}
+
+
+@media (max-width: 768px) {
+  .search-sort-container {
     flex-direction: column;
-}
+    align-items: stretch;
+  }
 
-input {
-    padding: 10px;
+  .search-input,
+  .sort-dropdown,
+  .category-dropdown,
+  .product-type-dropdown {
     margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+  }
 
-button {
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
+  .share-buttons {
+    flex-direction: column;
+  }
 
-button:hover {
-    background-color: #218838;
-}
-
-ul {
-    list-style: none;
-    width: 100%;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap; 
-}
-
-li {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin: 5px; 
-    flex: 1 1 calc(45% - 10px); 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-li button {
-    background-color: #dc3545;
-}
-
-li button:hover {
-    background-color: #c82333;
+  .share-button {
+    margin: 5px 0;
+  }
 }
